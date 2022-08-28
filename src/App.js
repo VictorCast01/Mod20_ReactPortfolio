@@ -1,21 +1,6 @@
-import React, { useState } from "react";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Page from "./components/Page";
-import Footer from "./components/Footer";
+import React from "react";
+import PortfolioContainer from "./components/PortfolioContainer";
 
-function App() {
-    const [pages] = useState([
-        { name: 'about me'},
-        {},
-        {},
-        {}
-    ]);
-
-    return (
-
-
-    )
-}
+const App = () => <PortfolioContainer />;
 
 export default App;
