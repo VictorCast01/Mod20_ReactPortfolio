@@ -23,8 +23,9 @@ This is the screenshot of the site
 
 Link to the Portfolio repo on Github 
 
-
+https://github.com/VictorCast01/Mod20_ReactPortfolio
 
 
 Link to the Portfolio
 
+https://victorcast01.github.io/Mod20_ReactPortfolio/
