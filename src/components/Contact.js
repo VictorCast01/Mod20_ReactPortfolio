@@ -3,21 +3,51 @@ import '../styles/Contact.css'
 
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <div class="contact">
+    <div className="flex-row justify-center col-1 col-lg-6">
+        <div className="card">
+          <h4 className="card-header bg-dark text-light p-2">Contact</h4>
+          <div className="card-body">
+            <form target="_blank" 
+          action="https://formsubmit.co/victorcastellon01@gmail.com" 
+          method="POST">
+
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" 
+                   name="name" 
+                   class="form-control" 
+                   placeholder="Full Name" 
+                   required />
+          </div>
+          <div class="col">
+            <input type="email" 
+                   name="email" 
+                   class="form-control" 
+                   placeholder="Email Address" 
+                   required />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" 
+                  class="form-control" 
+                  name="message" 
+                  rows="10" 
+                  required></textarea>
+      </div>
+      <button
+                  className="btn btn-block btn-info"
+                  style={{ cursor: 'pointer' }}
+                  type="submit"
+                >
+                  Submit
+                </button>
+            </form>
+            </div>
+        </div>
     </div>
+  </div>
   );
 }
