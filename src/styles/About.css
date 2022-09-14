@@ -1,4 +1,8 @@
 .about {
-    
+    margin-bottom: 10%;
+}
+
+.about p {
+    text-align: left;
     
 }
